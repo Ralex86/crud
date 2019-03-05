@@ -1,0 +1,36 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "a node crud server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run build -- --watch\" \"nodemon dist/index.js\"",
+    "build": "babel src/ --out-dir dist/ --no-babelrc --presets=flow --ignore spec.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ralex86/crud.git"
+  },
+  "keywords": [
+    "crud",
+    "node"
+  ],
+  "author": "Alexandre HASSLER",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ralex86/crud/issues"
+  },
+  "homepage": "https://github.com/Ralex86/crud#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "flow": "^0.2.3",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4"
+  }
+}
